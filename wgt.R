@@ -75,8 +75,8 @@ points(dts,
        cex=1,
        col="darkred",
        bg="red")
-
 lines(dates,
       vals,
       lwd=2,
-      col="darkred")
+      col="darkred",
+      alpha=0.5)

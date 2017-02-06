@@ -27,8 +27,11 @@ plot(dates,
      type="n",
      xaxt="n",
      yaxt="n",
+     xaxs="i",
+     yaxs="i",
      xlab="",
      ylab="",
+     bty="n",
      ylim=c(85,115),
      xlim=as.Date(c("2017-01-01",
                     "2017-07-15")))
@@ -44,7 +47,8 @@ axis(1,
 axis(2, 
      at=seq(85,
             115,
-            by=2))
+            by=2),
+     las=1)
 
 abline(h=110.9,
        col="red")

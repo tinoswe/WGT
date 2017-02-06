@@ -42,12 +42,14 @@ axis(1,
             by=10),
      labels=seq(as.Date(c("2017-01-01")),
                 as.Date(c("2017-07-15")),
-                by=10))
+                by=10),
+     cex=0.7)
 
 axis(2, 
      at=seq(85,
             115,
             by=2),
+     cex=0.7,
      las=1)
 
 abline(h=110.9,
@@ -103,7 +105,11 @@ abline(h=89.9,
        lty=4)
 
 
-points(dates,
-       vals,
-       col="darkred",
-       pch=19)
+#points(dates,
+#       vals,
+#       col="darkred",
+#       pch=19)
+lines(dates,
+      vals,
+      lwd=2,
+      col="darkred")

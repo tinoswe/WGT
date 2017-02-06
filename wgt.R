@@ -23,11 +23,83 @@ vals <- c(110.9,
 plot(dates,
      vals,
      col="black",
-     pch=19,
+     pch=3,
+     type="n",
      xaxt="n",
      yaxt="n",
      xlab="",
      ylab="",
      ylim=c(85,115),
      xlim=as.Date(c("2017-01-01",
-                    "2017-06-01")))
+                    "2017-07-15")))
+
+axis(1, 
+     at=seq(as.Date(c("2017-01-01")),
+            as.Date(c("2017-07-15")),
+            by=10),
+     labels=seq(as.Date(c("2017-01-01")),
+                as.Date(c("2017-07-15")),
+                by=10))
+
+axis(2, 
+     at=seq(85,
+            115,
+            by=2))
+
+abline(h=110.9,
+       col="red")
+abline(h=87,
+       col="red")
+abline(v=as.Date("2017-01-09"),
+       col="red")
+abline(v=as.Date("2017-07-09"),
+       col="red")
+
+#feb
+abline(v=as.Date("2017-02-09"),
+       col="red",
+       lty=2)
+abline(h=107.4,
+       col="red",
+       lty=2)
+#mar
+abline(v=as.Date("2017-03-09"),
+       col="red",
+       lty=3)
+abline(h=103.9,
+       col="red",
+       lty=3)
+#apr
+abline(v=as.Date("2017-04-09"),
+       col="red",
+       lty=4)
+abline(h=100.4,
+       col="red",
+       lty=4)
+#may
+abline(v=as.Date("2017-05-09"),
+       col="red",
+       lty=6)
+abline(h=96.9,
+       col="red",
+       lty=6)
+#jun
+abline(v=as.Date("2017-06-09"),
+       col="red",
+       lty=3)
+abline(h=93.4,
+       col="red",
+       lty=3)
+#jul
+abline(v=as.Date("2017-07-09"),
+       col="red",
+       lty=4)
+abline(h=89.9,
+       col="red",
+       lty=4)
+
+
+points(dates,
+       vals,
+       col="darkred",
+       pch=19)

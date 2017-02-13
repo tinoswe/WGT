@@ -9,7 +9,8 @@ dates <- as.Date(c("2017-01-09",
                    "2017-02-04",
                    "2017-02-06",
                    "2017-02-09",
-                   "2017-02-10"))
+                   "2017-02-10",
+                   "2017-02-13"))
 
 vals <- c(110.9,
           109.0,
@@ -22,7 +23,8 @@ vals <- c(110.9,
           106.3,
           107.4,
           106.5,
-          106.2)
+          106.2,
+          106.3)
 
 plot(dates,
      vals,
@@ -105,44 +107,44 @@ my_bmi = data.frame(h,w)
 my_bmi$bmi = BMI(my_bmi$h,
                  my_bmi$w)
 
-par(new = TRUE)
-plot(dates,
-     my_bmi$bmi,
-     axes=F,
-     xlab=NA,
-     ylab=NA,
-     col="darkblue",
-     pch=18,
-     #type="n",
-     #xaxt="n",
-     #yaxt="n",
-     xaxs="i",
-     yaxs="i",
-     #xlab="",
-     #ylab="",
-     bty="n",
-     ylim=c(21,35),
-     xlim=as.Date(c("2017-01-01",
-                    "2017-09-15")),
-     panel.first = rect(0.1,#dates[1],
-                        30,
-                        as.Date("2017-10-01"),
-                        34.99,
-                        col='lightcoral', 
-                        border=NA,
-                        alpha=0.2))
-axis(4, 
-     at=seq(20,
-            35,
-            by=1),
-     las=0.5,
-     cex.axis=0.6,
-     las=2,
-     col.axis="darkblue")
-
-my_bmi$bmi
-#
-#rect(100,#xleft 
-#     300,#ybottom 
-#     125,#xright 
-#     350 #ytop)
+# par(new = TRUE)
+# plot(dates,
+#      my_bmi$bmi,
+#      axes=F,
+#      xlab=NA,
+#      ylab=NA,
+#      col="darkblue",
+#      pch=18,
+#      #type="n",
+#      #xaxt="n",
+#      #yaxt="n",
+#      xaxs="i",
+#      yaxs="i",
+#      #xlab="",
+#      #ylab="",
+#      bty="n",
+#      ylim=c(21,35),
+#      xlim=as.Date(c("2017-01-01",
+#                     "2017-09-15")),
+#      panel.first = rect(0.1,#dates[1],
+#                         30,
+#                         as.Date("2017-10-01"),
+#                         34.99,
+#                         col='lightcoral', 
+#                         border=NA,
+#                         alpha=0.2))
+# axis(4, 
+#      at=seq(20,
+#             35,
+#             by=1),
+#      las=0.5,
+#      cex.axis=0.6,
+#      las=2,
+#      col.axis="darkblue")
+# 
+# my_bmi$bmi
+# #
+# #rect(100,#xleft 
+# #     300,#ybottom 
+# #     125,#xright 
+# #     350 #ytop)

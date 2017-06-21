@@ -76,6 +76,10 @@ axis(2,
      las=2,
      col.axis="black")
 
+abline(h=100,
+       col="grey",
+       lty=2)
+
 # abline(h=seq(85,
 #              115,
 #              by=1),

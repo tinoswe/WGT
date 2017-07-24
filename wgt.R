@@ -106,9 +106,6 @@ abline(lm(vals2 ~ dates2),
        col="salmon",
        lty=3)
 
-abline(h=95,
-       col="salmon",
-       lty=2)
 
 abline(h=104.3,
        col="grey",
@@ -117,3 +114,15 @@ abline(h=104.3,
 abline(v=as.Date(c("2017-09-04")),
        col="salmon",
        lty=2)
+
+abline(v=as.Date(c("2017-09-30")),
+       col="salmon",
+       lty=2)
+
+abline(h=seq(85,95,by=1),
+       col="darkgrey",
+       lty=4)
+
+abline(h=95,
+       col="salmon",
+       lty=4)

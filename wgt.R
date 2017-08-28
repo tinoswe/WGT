@@ -62,7 +62,8 @@ dates2 <- as.Date(c("2017-06-19",
                     "2017-07-21",
                     "2017-07-24",
                     "2017-07-25",
-                    "2017-08-07"))
+                    "2017-08-07",
+                    "2017-08-28"))
 vals2 <- c(104.3,
            103.6,
            103.1,
@@ -77,7 +78,8 @@ vals2 <- c(104.3,
            99.1,
            98.4,
            98.8,
-           98.3)
+           98.3,
+           100.7)
 points(dates2,
        vals2,
        pch=20)
@@ -106,9 +108,9 @@ abline(h=100,
        col="red",
        lty=2)
 
-abline(lm(vals2 ~ dates2),
-       col="salmon",
-       lty=3)
+#abline(lm(vals2 ~ dates2),
+#       col="salmon",
+#       lty=3)
 
 
 abline(h=104.3,
@@ -130,3 +132,4 @@ abline(h=seq(85,95,by=1),
 abline(h=95,
        col="salmon",
        lty=4)
+
